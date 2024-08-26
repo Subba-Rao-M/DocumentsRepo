@@ -169,6 +169,18 @@ Git Pull -- > Get updated code from remote repository to existing local reposito
 
 Remote Repository URL -- > https://github.com/Subba-Rao-M/DocumentsRepo.git
 
+git clone 'ttps://github.com/Subba-Rao-M/DocumentsRepo.git'
+cd DocumentsRepo
+git add .
+git commit -m "Updated file"
+git log --oneline
+git push origin main --> Main is the branch name in git remote repository
+
+Git clone when there is no local repo
+git pull when there is local repository and pull latest changes
+
+
+git pull origin main --> Pull the code from main remote repository to local repository
 
 
 
