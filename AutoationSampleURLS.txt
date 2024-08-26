@@ -1,1 +1,29 @@
 
+Sample projects for Automation
+Project 1- https://katalon-demo-cura.herokuapp.com/
+Project 2- https://www.orangehrm.com/
+Project 3  - https://sdet.live/L6Ke
+Project 4 - https://awesomeqa.com/ui
+Project 5- https://the-internet.herokuapp.com/
+
+https://app.testim.io/#/signup
+
+https://testautomationpractice.blogspot.com/
+
+Miro.com -- Drawing tool
+
+
+mvn test -Dcucumber.filter.tags="@yourTagName"
+
+test -DBrowser="$Browser"
+String DriverType = System.getProperty("Browser");
+if(DriverType.contains("IE")) {
+    DriverType = "IE";
+} else {
+    DriverType ="Edge";
+}
+return DriverType;
+
+
+
+
