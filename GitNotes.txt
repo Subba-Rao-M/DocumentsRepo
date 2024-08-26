@@ -1,0 +1,178 @@
+GIT Notes:
+Centralized Repository: SVN
+Distributed Repository: Git
+Working Directory  Staging Environment  Git Local Repository(Git) Remote Repository(GitHub)
+Untracked Files  (Add) Tracked Files (Commit) Committed File --> (Push)(Pull)(Clone) Remote File
+Master Branch – Sub Branches 
+Install Git
+
+git --version
+ls – all files display 
+pwd – current directory
+clear – clean the command prompt data
+all unix and linux commands will work
+
+Go to project path and right click for git bash option
+
+Git Init  Empty local repository is created 
+Git Status - > Status of files available in local repository  Untracked files listed
+Git Add  -> add the files to staging area or indexed area
+Git add – - a – To add all files -A or – a or all
+Git add filenames – based on file name
+Git add .* -> file with extensions
+git config --global user.email "email id"  Configure email 
+git config --global user.name "Subba Rao"  Configure Password
+
+git commit -m "First Commit" -> Move the files from staging area to local repository
+
+git log -> this will show how many commits done by user earlier(History)
+
+When you modify existing files and update it use below combined command
+git commit -a -m "Updated Files"
+
+git diff
+working directory - > staging area - > local repository - > remote repository
+
+To compare the files in any of above stages
+vim c.txt -> open file
+:wq! – to save
+Cat a.txt -> to view the content
+touch a.txt
+
+difference between working directory and staging area
+git diff b.txt
+Example: 
+diff --git a/b.txt b/b.txt
+index da8f209..502a30f 100644
+--- a/b.txt – source file missing something ---
++++ b/b.txt – data added in working directory +++
+@@ -1 +1 @@
+-Test2
+a-- > Staging area
+b -> working directory
+
+Difference between working directory and last commit
+HEAD is referred as last commit
+git diff HEAD b.txt
+
+Difference between staging and local repository 
+git diff --staged HEAD b.txt
+
+difference between specific commit and working directory
+git log –oneline –>  All previous commits with commit id displayed
+git diff commitid b.txt
+
+Compare specific commit and staging file
+git diff –-staged commitid
+
+difference between 2 specific commits
+git diff commitid1 commitid2 b.txt
+
+Comparing branches
+git diff master test
+
+comparing local and remote repository
+git diff master origin/master – pass remote url here
+
+GIT RM COMMANDS:
+git ls-files  TO list the files in staging area
+to remove file from both local directory and staging area
+git rm c.txt  To remove particular file
+git rm -rm .  To remove all files
+Remove file from only staging directory and not from working directory
+git rm – cached d.txt
+Remove file only in working directory and not in staging -> rm d.txt
+
+Git Checkout Command:
+Is used to discard the unstaged changes in tracked files of working directory i.e the files which are in working directory which are at least once added to staged directory and working directory has additional changes. Basically it is undo operation.
+git checkout -- c.txt
+Also used for branching purpose:
+
+GIT RESET COMMANDS:
+Used to remove the changes in staging area -> git reset d.txt  File level reset
+To undo commits at repository level – Commit level reset – git reset <mode>  <commitid>
+Mode will say where the undone changes should be reflected
+-- mixed -> default mode which will reset local repository and staging area and will not change working directory
+-- soft  changes will be available in working and staging area and removed only from local repository
+-- hard  In all places removed including working directory, staging and local repository and no option to revert the changes
+<commitid> -> 1 2 3 4 – If 1 given 2, 3 4 will be discarded and if 3 given only 4 removed
+git reset --mixed commitidvalue
+
+GIT BRANCHING:
+Master is main branch
+Helps in parallel development
+
+
+Master -> C1 - > C2 - > C3 --------------- C4 - > C5
+			C3 | Inherits all previous commits from previous master branch until from where feature branch is created
+Developer 1 – Feature1 – C1 – C2 – C3 - > Merge to  main branchor Push to Remote Repository
+ Developer 2 – Feature2 – C1 – C2 – C3 -> Merge to main branch or Push to Remote Repository
+All the branches are isolated and independent
+git branch  To view available branches and * indicates in result as active branch and working on that branch
+git status --> what are the files available under master branch
+git branch branchname - > To create new branch
+git checkout  branchname  TO switch to other branches and this command is also used to discard the unstaged changes for tracked files refer above
+git checkout -b BR1       - > creating new branch and switching to it in single command
+
+Merge:
+Fast forward merging -- > after checkout of branch there is no new commits in master branch and feature branch merged to master without code conflict
+Three Way Merging - > After checkout of branch there are new commits in master branch and later the checked out branch is merged to master and there will be merge conflict which needs to be fixed manually
+To merge the code to master user should be in master branch as active directory
+git merge branch_name
+Three way commit – Master – Header – MergeCommit
+git add m.txt; git commit -m “message to add m.txt”
+RESOLVING MERGE CONFLICTS:
+git merge branch_name
+Auto-merging a.txt
+CONFLICT (content): Merge conflict in a.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ cat a.txt  Now the content will be different
+Test1 – Common Line in both files
+<<<<<<< HEAD -- > Data in Master Header file node
+New Line in Master
+Added 2ndLine in Master
+=======  Data added in feature file
+test2
+test3
+>>>>>>> FeatureFIle
+:q  To quit file without savings
+dd - > to remove the lines in file
+after removal once again add the file and commit
+git add a.txt; git commit -m "Merged removal of conflicts"
+git log –oneline –graph  To view the commits in graphical format
+
+git branch -d branch_name  To delete the branch
+
+GIT REBASE Command:
+Rebace no chances of getting conflict
+
+Master -> C1 - > C2 – C3 - > C4 -> Rabase 
+			C3 -> C1F -> C2F - > Objects for commits C1F and C2F from branch is created over C4 with new commit IDS
+Difficult to track the changes are from which branch
+Any time we can go merge
+Rabase can be used only in local environment and don’t use it in remote environments, not recommended
+Merge history is maintained
+Rebase history is not maintained as new commit id s are created in master branch and old history from feature is lost
+git rebase master   Executed from feature branch to add the commits over master branch
+git merge branch_name  Executed from master branch and it is called fast forward commit
+git log –oneline –branch_name
+
+GITHUB:
+Remote Repository for hosting git repositories
+Working DIrecotory - > Add -> Staging Repository  Commit – > Local Repository – > Git Hub
+Git Clone  Get the repository to your local machine
+Git push - > From Local repository to move the code to remote repository
+Git Pull -- > Get updated code from remote repository to existing local repository
+
+
+
+Remote Repository URL -- > https://github.com/Subba-Rao-M/DocumentsRepo.git
+
+
+
+
+
+
+
+
