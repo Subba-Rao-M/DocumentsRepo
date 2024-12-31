@@ -1,0 +1,161 @@
+Using AI for testing:
+- Using ai for testing is different from testing AI
+- AI can be used to create test cases, execute, generate automation test code, generate test data
+- Similar using google search to get the accurate the data instead of using multiple sources
+- SHould have prompt engineering skill to get the right solution
+
+AI powered testing tools
+
+- Uses ML based on AI
+- helps to write codeless automation using scenario described in plain english and generates intelligent report
+- Self healing capability like if locator changes automatically code updates it intelligently
+
+Testing AI (ML)
+
+- Testing AI tools using white and black box testing techniques
+- Testing robustness, performance, accuracy, etc to make sure models work as intedended 
+
+
+ChatGpt, Gemini, Copilot etc tools available as populat tools
+
+Generating the test plan. Give the project plan description, number of resources available in team, OS and Browsers to be tested and number of estimation given by client.
+
+check if it is possible, if not go back and negotiate
+
+Check if you have required skills.
+
+Generating Test Cases for the requirement using Gen AI:
+
+Now let us prepare the functional test cases for requirement x and y based on above input given for test plan.
+Review the test cases generated and edit and update it if required based on requirement.
+Export to Excel is also provided.
+
+Can we have test data for each test combination by adding new column for above test scenarios.
+instead of multiple test cases can you prepare a solid functional test flow as end to end scenario for user accounts and product cateloughe together
+
+Generating a test strategy (shift left testing) with the given test cases using AI:
+The test cases can be categorized as unit testing, integration testing, system testing, etc as different stages
+UI layer testing is costly as testing is done at the later stages
+ok as part of shift left testing tell me which test cases go to which layer of test pyramid.
+Ask the developer to involve those test cases in their unit and integration testing.
+with the test cases what you created above give me which test cases go to in which layer of test pyramid.
+Can you give me these test layer names by creating another column for each row so that i can see all details in same spreadsheet
+
+Generate the Test Data for the given tests using Ai:
+
+For test UA-05 give me the input and output combinations to test the unit test method
+For the test UC-05 give me cucumber gherkin feature file steps.
+can you add the login feature bas backgorund to start the test scenario form login steps.
+
+Prepare cucumber gherkin file for UA-07 order history display where page has columns and paste column names
+
+below is my outer html. could you please do your best to implement step definition based on below order html table. Copy paste outer html 
+
+can you modify the above code with page object structure  so that locators are pulled as methods from page object file to use in above step definition file.
+
+Generating custom code utils in selenium, playwright
+
+Below is my outer html. using this can you write a selenium java logic as method where input we will pass as order id. Logic has to search order id within table and if match found 
+then it has to return name column value of table for that particular oder id by sanning the values in row. DOnt use indexes for finding column instead use column names only.
+
+Order name is coming as null. Can you please create the defect report in Jira template for issue observed in mac and chrome browser on date.
+release is tomorrow and we identified the above issue and write an email explaining this is not blocker for tomorrows release and can go in next release as remaining functionalities working fine.
+Seek for approval.
+
+Compare the solutions in chatgpt, gemini and copilot for better answers
+
+Github copilot:
+Added as extention in VS code. works as AI pair programmer.
+should have github account
+Paid tool and free for 30 days
+Open the copilot window and prompt page opens
+Ask question where methodname is present below can see @ symbol where option to select search in work space, terminal etc
+Ask to otimize the searched method and follow coding standards
+Code can be updated in existing fie or newly created file.
+
+check out xx.spec.js file how dataset is created and used. Apply same logic in test1.spec.js file.
+
+Use copilotedits to apply the changes in all files. Example adding author version history details in all files.
+
+
+AI Powered Testing Tools:
+
+chatgpt and gemini are generic modules which scan and search the data
+new testing tools with ai powered intelligence automation
+testrigor, testim, testgrid, testsigma are popular ai powered testing tools.
+Capabilities of ai powered testing tools: automated script generation based on plain english language, self healing tests - if any locator changes automatically gets script updated with new locator,
+intelligent reporting - because of this issue x test cases failed and y remaining some test cases failed, shows reason for failure and suggests fix
+
+testrigor tool:
+Enter test suite name
+Enter url
+Enter user name and password if applicable. If given for above url logs in and navigates to home page to start test
+Enter the app description like use case scenario or acceptance criteria
+Select number of test cases to be generated from above scenario
+Click Create test suite
+ 
+Not 100% correct, around 50 to 70% correct result
+Click Add and Build
+
+Desribe the functionality in testrigor or ai powered tool requested convention
+Based on above scenario is converted to test case
+Own terms - convert to conventions - code - execute
+
+Very good reporting
+Because of x issue y number of test cases failed
+Yeterday test case passed image and today why it is failed
+Create bug in jira
+
+Self healing - Preven test failures automatically due to code changes
+change settings in tool to use auto heal by default it is set to No
+
+Using Generative AI for API testing - parsing json responses
+complex nested json array
+below is api json response. Scan this response and generate test cases.
+In place or response schema is also given.
+Generate api schema for above response.
+Can you generated rest-assured java test cases for above test cases
+Generating pojo classes and java methods using AI
+Below is my json, can you please prepare pojo classes with getters and setter methods.
+Below is API contract. Give me the rest assured code to add the book and retrieve the same book with assertion. Finally delete the book added.
+is there any betterway to handle payload instead of writing into variable.
+
+Generate API test cases for cypress or playwright tool using given api contract.
+
+write a code to compare 2 jsons and jsons are nested arrays. and the values are dynamic for other than array value.
+
+
+Generaring complex SQL queries for database verification using AI.
+
+which city has got maximum sales amount in last 1 month based on tables and columns.
+Give me query for top selling product categories
+query for Customers who have not ordered recently
+
+
+Integrating AI into playwright product?
+
+
+
+
+AI models are LLM i.e large language models
+LLMS are hosted in cloud
+these can be downloaded in local system
+you can create your own llms
+search gpt for all and download in winows or mac
+install and setup in local system
+select the model to use. Model is like version which is supported in backedn to provide answers
+Use base models with lighter version with less RAM usage and file size practice and paid models also available
+useful when in company cloud ai is not supported
+
+Setup custom llm with local project documents setup to get answer quickly
+Use local documents and upload all project documents
+and on asking question it searches in these doucment and gives answer
+Data will not be connected to internet and works in local only
+Stores all data in vector, vector is like data dictionary
+
+
+
+
+
+How to Use AI to improve coding language knowledge:
+Ask question for sample scenarios without solution and then compare solutions
