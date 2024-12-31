@@ -227,6 +227,8 @@ git checkout master -- Go to master branch
 git pull origin master -- Get all latest code to master
 git merge develop --> develop will be merged to master
 
+Git merge conflict handling:
+Git smartly merges the code with its intelligence 95% of time but if it is not able to throw conflict which manually needs to be resolved
 
 
 
