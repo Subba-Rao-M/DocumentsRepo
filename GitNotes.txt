@@ -23,6 +23,12 @@ Git add .* -> file with extensions
 git config --global user.email "email id"  Configure email 
 git config --global user.name "Subba Rao"  Configure Password
 
+git add * --> adds all files to staging area
+
+git commit will look for files available in commit 1 called staging area
+
+git status - check for staged files
+
 git commit -m "First Commit" -> Move the files from staging area to local repository
 
 git log -> this will show how many commits done by user earlier(History)
