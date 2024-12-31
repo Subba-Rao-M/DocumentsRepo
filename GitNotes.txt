@@ -210,6 +210,22 @@ Instead of making changes in master branch create a separate branch they will cr
 code push and pull will happen with develop branch
 after all code changes and testing develop branch will be merged with master branch
 
+Creating new branch and checkout to branch created. Branch will have all codes until checkout
+git checkout -b branchname
+
+git branch -- to know the branches and * indicates current branch
+git add * --> files added to staging in develop branch
+git commit -m "commit message"
+git push origin develop -- move the develop branch to remote repository
+
+Other developer: 
+git pull origin develop
+git checkout develop
+
+Merging develop branch to master
+git checkout master -- Go to master branch
+git pull origin master -- Get all latest code to master
+git merge develop --> develop will be merged to master
 
 
 
