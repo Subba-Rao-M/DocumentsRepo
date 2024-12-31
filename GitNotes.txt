@@ -175,18 +175,40 @@ Git Pull -- > Get updated code from remote repository to existing local reposito
 
 Remote Repository URL -- > https://github.com/Subba-Rao-M/DocumentsRepo.git
 
-git clone 'ttps://github.com/Subba-Rao-M/DocumentsRepo.git'
+git clone 'https://github.com/Subba-Rao-M/DocumentsRepo.git'
 cd DocumentsRepo
 git add .
 git commit -m "Updated file"
 git log --oneline
-git push origin main --> Main is the branch name in git remote repository
+git remote add origin "https://github.com/Subba-Rao-M/DocumentsRepo.git" --> connect to a remote server
+git push -u origin main --> main/master branch code is pushed to origin remote repository configured above
 
 Git clone when there is no local repo
 git pull when there is local repository and pull latest changes
 
 
 git pull origin main --> Pull the code from main remote repository to local repository
+
+*** RS Udemy course "
+
+Git end to end work flows:
+New user came to system and want to clone the code to fresh repository
+git clone 'https://github.com/Subba-Rao-M/DocumentsRepo.git'
+make the changes in code
+git add *
+git status
+git commit -m "Committed x files for task y"
+git remote add origin 'https://github.com/Subba-Rao-M/DocumentsRepo.git' --> if commit first time
+git push origin master
+
+To take the latest code from origin to existing master repository without losing the changes:
+git pull origin master
+
+
+Branching: 
+Instead of making changes in master branch create a separate branch they will create develop branch
+code push and pull will happen with develop branch
+after all code changes and testing develop branch will be merged with master branch
 
 
 
