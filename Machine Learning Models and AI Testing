@@ -53,4 +53,16 @@ Feature Selection - Data processing - Model intitialization by Choose algorithm 
 
 Evalution of supervised data: 
 Training data accuracy around 95% and test data accuracy around 60%
+Signs on overfitting - Good performance on trained data and less accuracy on real data
+Model will become complex due to memorizing large data instead of identifying patterns
+
+Evalution of Un supervised learning: 
+Trained input
+No predefined output label and output is defined by machine learning only
+Example: Targeted ads based on agegroup from a country and language, etc
+Target changes everytime
+Clusters - Group of similar data by creating data points(Common data)
+Instagroup - Based on agegroup and location created 6 to 7 clusters
+Test based on blackbox testing and for the large set of input data form the clustered data and verify the output
+
 
