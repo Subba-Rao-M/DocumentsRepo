@@ -28,3 +28,29 @@ Data Preparation - > Model Enginieering - > Model Evaluation ( These 3 stages ar
 Model Deployment - > Operations - > Monitor and Evaluate - > Plan < - Business and data undestanding (This beloings to online mode and plan is linked back to data preparation)
 
 In Model evaluation phase testing comes into picture but starts in model engineering phase
+
+input - > ML Model - > Output
+Training Data - Train the machine learning model with valid input data to train the system
+Validated Data - Evaluate the machine learning learns based on data if data sufficient, overloaded, is answer accurate based on data, how much data required to get accurate answers
+In validation data we provide input data only and output is checked where as in training data both input and output is given as valid data
+
+In validation data two problems may arise - one is overfitting and other underfitting
+
+ 
+Underfitting - Data will not work based on unseen data (1St iteration)
+Good/Robust fit - If data gives accurate result 
+Overfitting - Performance goes down due to increased data and wroks well with trained data and fails with real time data
+
+Example:
+Predicting house price
+problem definition: predicting the price of house based on various features like size, number of bedrooms, age of property, location
+Features(Inputs) - > Size of house in sq feet, number of bed rooms, age of house in years
+Output Label (Targets) - Price of house in dollars
+Training data example: Size of house in sq feet, number of bed rooms, age of house in years added for several houses
+Model Training: Linear regression data is used to learn the relationship between input features and targets
+
+Feature Selection - Data processing - Model intitialization by Choose algorithm - Model Training - Evaluation 
+
+Evalution of supervised data: 
+Training data accuracy around 95% and test data accuracy around 60%
+
