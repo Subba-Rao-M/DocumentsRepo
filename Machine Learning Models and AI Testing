@@ -173,3 +173,14 @@ During development phase only along with training data, validation data also sho
   - While testing swap the data form left to right and verify the response content
   - When you reverse the input same output should be given based on prediction of response
   - When reversing the data, logically it should make sense
+
+
+Asyncronous ML Serving:
+From client request is sent to ML serving node
+request sent will be in request que and send back response asyncronously
+
+
+All ml model uses http request and uses post call
+Get bearer token for authorization
+Using Postbot in postman - Postbot is similat to chatgpt/gemini using which user can generate scripts for pre or post scripts
+
