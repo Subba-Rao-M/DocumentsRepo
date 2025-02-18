@@ -100,3 +100,76 @@ Monte Carlo Tree Search
 Asyncronous advantage actor critic(a3c)
 
 Most of the frameworks for algorithm is given by Python
+
+
+Functional Testing in Model Evaluation Phase:
+validation data is used here
+During development phase only along with training data, validation data also should be prepared
+
+1. Temperatture Testing
+  - To control the randomess of prediction models
+  - Lower temperatture makes model deterministic
+  - High value makes it more creative and unpredictable
+  - Setting temperature 0.2 makes model more repeatitive and predictable
+  - Setting it to 0.9 makes result varied and creative 
+  - Testing with different temperature helps to know the stability of model like boundary value testing
+  - For web and mobile traffic different temperatures are set
+
+2. Prompt Testing zero-shot
+  - Example : Testing beyond trained knowledge of AI like for medical trained AI ask question related to geography
+  - Check how model should behave when it is not relavant 
+
+3. Chain of Thought Prompts
+  - How well the model can follow logical steps and reasoning
+  - Chain of thought prompts to evaluate the models ability to follow logical reasoning steps
+  - These prompts require the model to demonstrate sequential thinking and problem solving
+  - Ex: If train leaves by 3PM and travells for 2 hrs at 60km/h, how far it  have travelled by 5PM
+
+4. Does model stay relavant to topic?
+  - checks model stays on topic or drifts away from it during conversations or tasks
+  - Question about global warming should stick to climate changes and should not deviate towards pollution control
+  - This should be tested for different scenarios with different tempearatus with 10 to 15 questions related to business domain
+
+5. Fantasy claim definition
+  - the model does not make overly imaginative or false claim beyond reasonable knowledge
+  - Example: Can drining tea cures this disease and it responds with yes
+  - Try to confuse the model with different set of questions
+
+6. Accuracy Testing Definition
+  - Predicting how accurate the model is in predicting outcomes and classifications
+  - Example: image classification predicts with around 85% to 90% with accuracy
+
+7. Repeatability Testing
+  - Same question is asked multiple times and check the response is same consistantly
+  - fundametals should not be changes, may be additional information related to same given thinking user did not understand
+  - Ask the same question in difference phrases like 5+2 and 2+5 should be same
+
+8. Style Transfer Testing
+  - Adjusting tone and stype of output based on input
+  - Consistancy should be maintained
+  - Example formal and casual email. Formal should generate formal email and casual should include casual text
+  - Rude email about interpreting the system
+
+9. Intent Recognition
+  - Test whether model can correctly interpret the intent behind users input for getting the response
+  - including sarcasm and humour
+  - if use says oh great another meeting! model should interpet it as negative statment instead of positive based on context
+
+10. Context Management
+  - Primary testing needs to be done
+  - Model should remember the previous question and answer next series of questions 
+  - Example : What is the capital city of France? Suggest good hotels?
+
+11. Invariance Testing 
+  - checks if the ML model is invariant to specific changes in input data
+  - changes should not impact models response for data
+  - the model can give same prediction even if data changed
+  - Example: Changing the patients name and date of birth but same symptoms in medical ML model
+  - It ensures the robustness of ML model by verifying that it produces consistant predictions despite irrelevant chnages
+  - Similat to asking question in different phrases but there same question and data but here same question for different data
+
+12. BiDirectional Testing
+  - Some data with left and right axis trained
+  - While testing swap the data form left to right and verify the response content
+  - When you reverse the input same output should be given based on prediction of response
+  - When reversing the data, logically it should make sense
