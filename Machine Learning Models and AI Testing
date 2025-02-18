@@ -64,5 +64,39 @@ Target changes everytime
 Clusters - Group of similar data by creating data points(Common data)
 Instagroup - Based on agegroup and location created 6 to 7 clusters
 Test based on blackbox testing and for the large set of input data form the clustered data and verify the output
+Silhouette Scores used to map the result with values -1 0 and 1 and if 1 data perfect and if 0 sligt delay and -1 not fit data for the cluster
+
+REInforcement Learning:
+Learning through interactions
+Example Robots or games like chess, where it should take decision based on outside move
+interacting with environment, perform actions learn based on rewards or penalties
+Remember rewards and penalties and if penalty dont repeat same mistake
+
+Supervised Learning Algorithms used:
+Linear Regression - 
+Logistic Regression -
+Support Vector Machines - 
+Decision Trees - 
+Random Forests
+Gradient Boosting Machines
+Neural Networks
+K-Nearest Nighbours
 
 
+Unsupervised learning algorithms
+K-Means Clustering - commonly used
+Hierachical clustering
+Principal component analysis
+Independent component analysis
+Autoencoders
+Generative adversarial networks
+
+Reinforcement learning algorithms:
+Q-Learning
+Deep Q Network
+Policy Gradient Methods
+Actor-Critic Methods
+Monte Carlo Tree Search
+Asyncronous advantage actor critic(a3c)
+
+Most of the frameworks for algorithm is given by Python
