@@ -2,3 +2,29 @@ Introduction to AI and Machine Learning:
 - Systems which perform tasks which require human intelligence
 - Tasks include problem solving, natural language understanding, pattern recognition and decision making
 - Examples - Calculators, voice assistance like siri or alexa, self driving cars, recognition of object by picture, chatbots providing customer services
+
+Approchaes of AI:
+  - Rule based systems - predefined rules with if and else scenarios
+  - Machine learning - advanced rules with historic data, patterns and relationships
+
+Machine Learning:
+ - Used to achive artificial intelligence
+ - Machine learn themselves based on data given
+ - Based in data, it will identify patterns and relationships and then make decisions or predictions
+ - Deep Learning used artificial neural networks learn the system
+ - Examples: Filtering spam emails, promotionsl emails, recommendations in netflix, suggestions in facebook, youtube, advertizement based on search history
+ - The system is flexible, scalable and has less interpretability and high data set required
+ - Famous ML Models based on AI-  ChatGPT, Gemini, Copilot - Lots of data feeded to these systems
+ - Types of ML - Supervised learning(Labeled data with mapped input and output), Unsupervized Learning(Unlabeled data - predicts based on patterns and relationships) and reinforcement learning(learns by interacting with environment by receiving rewards or penalties
+    like online games)
+
+
+Early Testing Strategies in ML Testing models(Supervised Learning)
+
+Machine Learning Model Life cycle stages with online and offline modes
+
+Data Preparation - > Model Enginieering - > Model Evaluation ( These 3 stages are called offline operation )
+
+Model Deployment - > Operations - > Monitor and Evaluate - > Plan < - Business and data undestanding (This beloings to online mode and plan is linked back to data preparation)
+
+In Model evaluation phase testing comes into picture but starts in model engineering phase
