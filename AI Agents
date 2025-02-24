@@ -1,0 +1,11 @@
+What is AI Agents:
+Browser use - agents that enable ai agents to control the browser
+but this raw automation is not sufficient in real world testing
+Framework design is technical but scripts are code less i.e scenarios are described in plain english
+
+AI agents interact with browser, environment, test data, and makes decision
+Browser-use.com - library helps in 
+  navigate web pages
+  intereact with elements
+  collect the data
+
