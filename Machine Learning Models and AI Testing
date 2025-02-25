@@ -184,3 +184,90 @@ All ml model uses http request and uses post call
 Get bearer token for authorization
 Using Postbot in postman - Postbot is similat to chatgpt/gemini using which user can generate scripts for pre or post scripts
 
+Responsible AI Testing:
+AI systems are developed an deployed in a manner that is aligned with ethical, fair, transparent and reliable standards.
+The goal is to address the risks that AI can pose including bias, lack of transparency, security vulunarabilities and intended social impacts
+
+Fairness testing: Test model treats all demographic groups equitably without unfair bias based on race, genger, age, socio economic status, etc
+Example companies hiring process
+Example medication can work based on some demographic region
+Suggest few restaruants in a place. Suggest restaratnts bases on budget ranging form high to low end
+Check how the results are generated in validation and see how it is biased towards different conditions
+Bias Detection and Mitigation - Definition, example and mitigaction methods basted on ML models
+
+Transperancy Testing: Explainability
+Ensure model decision can be easily understood and explained.
+Example: Loan approval process with reasons criteria for approval and denial
+Mainly used when reasons required to take some decision
+
+Ethical Testing:
+AI decisions are Adhers to moral standards
+Example: Health diagnosis ML model not recommending life changing treatment with high confidence
+Prevents overstepping decisions in sensitive contexts like heathcare or crime 
+
+
+Data Privacy and Security Testing:
+Ensure model adhers to privacy regulations and protects sensitive information
+Facial recognition system not leaking the persons photo during testing or production
+Tweak questions in different phrases to get the information which should not be shared
+
+
+Model Generalization Testing:
+Model generalizes well with data across different diverse environments and data sets
+Prevents performance drop offs with new environment and data sets
+Example human emotion is common across different countries 
+
+Societical Impact Testing:
+should not bring negative impact to society
+align with social norms and values
+
+Model Evation Testing completed and deployment is done. 
+Integration Testing:
+After moving to production make sure to perform integration Testing
+Ensure smoother integration with larger production systems
+All logs generated correctly and statistical data generated
+Effective communication between model and system components
+Correct data flow and api interactions, input and output formats consistency
+Also called production testing, smoke testing
+
+Monitor and Evaluate: 
+Take data and plan for further modifications in upcoming versions
+
+Latency Testing:
+Ensure predictions are made within acceptable time
+For free plan and paid plans check with defined SLA
+Response time on peak and normal load
+Scalability
+
+Data Drift Testing:
+Changes in destribution of input data
+Set up alerts for changes in data destribution or accuracy
+In test evaluation testing was done with trained data for example covid symptoms
+after 3 years of covid if same type of questions asked, there may be difference in response
+This scenarios is called data drift and new symptoms should be updated for input data
+
+Concept Drift: changes relationship input and output data
+example chanes in invoking web browser using selenium webdriver
+
+Ask for right question for what kind of data and concept drift to look for
+
+Shadow Testing:
+Run new model/updated version in shadow mode without affecting live application
+Test with live data, logs and compare predictions with production data
+Compare if any descripencies and correct it
+Can be started testing engineering phase considering shift left approach
+
+A/B Testing:
+Compare existing and new version testing with real time users
+Split the user traffic between new model A and old model B
+Compare the data statistically for data and behaviours
+
+
+Continous monitoring is the key
+Real time dashboards
+Data drift monitoring
+Automated retraining
+Track accuracy, precision, recall and latency
+Trigger alerts for performance drops
+Update model with new data patterns
+
