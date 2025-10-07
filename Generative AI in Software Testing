@@ -24,8 +24,9 @@ check if it is possible, if not go back and negotiate
 
 Check if you have required skills.
 
-
+********
 Prompt Engineering:
+1) Single shot prompting
 Use 3Cs - Context, Constraint and Clarity
 
 Context - Be specific
@@ -35,6 +36,39 @@ Clarity - Give details how output should be
 Example: To generate the test cases say your role and for which domain project you are working, specify the functionality for which test cases to be generated, add the constraints like negative scenarios,
 browsers etc where to be tested, add format in whcih type you need test cases generated like test case id, description, steps, expected result, etc and add the priorities etc
 
+2) Few Shot Prompting
+Give few existing examples to AI and then request remaining scnearios in same format to be outputted
+
+3) Chain of Thought prompting
+Asking AI to reason step by step before providing the final answer
+
+Example: You are a QA engineer. Lets think step by step. How would you design negative test cases for password feature?
+
+4) Iterative Prompting
+To refine answers
+
+**********
+Tokens:
+
+4 characters or letters are considered as tokens including spaces
+n number of tokens in a prompt calculated and it is used for charging/price calculation
+Token is calculated for both request and response of a prompt
+Writing a clear prompt and getting required answer with less tokens in crucial
+Clear prompt reduces the tokens and saves for usage
+
+Context Window Limit:
+model will have its own limit
+storing previous prompt has its own limits
+Prepare better context to maintain previous contexts to generate consise answers
+Good practice:
+Be precise from the past
+remove the unnecessary filter words
+summerize and restate important info
+use role+context+constraint
+chunk large tasks
+
+
+**********
 Generating Test Cases for the requirement using Gen AI:
 
 Now let us prepare the functional test cases for requirement x and y based on above input given for test plan.
