@@ -9,3 +9,35 @@ Browser-use.com - library helps in
   intereact with elements
   collect the data
 
+MCP - Model context protocol - standardises protocal for LLMS
+standardized way to ask with other sytems like databse, file, excel files with defined standards
+Use specific MCP servers for playwright, selenium, etc as per defined standards and integrate it with VS code
+Relavant information or methods configured to use like navigate to url, connrect to database, enter text, click 
+
+
+AI Agent =  LLM + MCP Servers
+
+LLMS - Claude, Gemini, chatgpt, etc
+
+Claude - MCP server configuration file(Json)
+
+|                    |
+Playwright MCP      MySQl MCP ------ Excel MCP, Rest API MCP, File System MCP, Github, Jira, Slack MCps etc
+
+|                    |
+Web Browsers       Database ---------- Excel files, external Apis, file system, etc
+
+LLM will remember previous action change done based on some condition for next test case while generating test case or code i.e LLM learns from historic data
+
+Export postman collection and use file system read mcp to read the data in collection file for api testing both api and file mcps can be used together
+Excel also used along with file system to know the location of file
+
+
+MCP with VS Code:
+used to perform below actions with prompt only:
+Build playwright framework
+add tests
+coomit and push the code to github(add github mcp server configuration in json file and for this docker desktop should be present in system)
+
+Prepare custom sub agents for specific tasks using configure models option under github copilot and give instruction what this agent needs to perform
+Multi Agents - having multiple permissions - helps in scalability, parallel execution, easier maintainance and specialization
