@@ -1,1 +1,21 @@
+GitHub Copilot with Selenium and IntelliJ
 
+Pair ai programmer
+Can be integrated with intellij and vs code as extentions
+eclipse dont have stable support
+
+Github copilot ai capabilities:
+1. Create new files based on existing file formats like page object classes, test cases, etc
+2. Create selenium/playwright action methods for html locator provided
+3. Understand project hierachy and establish connection between them
+4. Identify and fix errors in project files
+5. Search for retrive method usage and implementation files within the project
+6. Add necessary comments and documentation to improve the code readability
+7. Convert automation code into plain english manual scenario
+8. Optimize code based on peer comments on PR requests created
+9. Generate step definition for cucumber feature files created
+
+
+Use company provided enterprice LLMS for privacy and security and double check before using it
+
+Start prompt with @project - has access to entire project
