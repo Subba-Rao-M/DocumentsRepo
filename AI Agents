@@ -41,3 +41,13 @@ coomit and push the code to github(add github mcp server configuration in json f
 
 Prepare custom sub agents for specific tasks using configure models option under github copilot and give instruction what this agent needs to perform
 Multi Agents - having multiple permissions - helps in scalability, parallel execution, easier maintainance and specialization
+
+
+*****************
+
+Agentic AI Solutions:
+Takes action and makes decision based on goals instead of just reponding to prompts
+Multiple agents communicate each other to solve the problem proactively
+Example : integrating jira agent and playwright agent. Jiras latest bugs converted into test cases and automation scripts created and executed and update the status back in jira
+
+AutoGen and Crew AI are examples for agentic ai solutions
